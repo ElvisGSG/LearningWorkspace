@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BoolExersice</title>
+</head>
+<body>
+  <script>
+    let hours = 15;
+    let name = 'Elvis'
+    let age = '70';
+    const isHoliday = true;
+    if (hours < 12) {
+      console.log(alert(`Good Morning! ${name}`));
+    } else if (hours > 12 || hours < 18) {
+      console.log(alert(`Good Afternoon! ${name}`));
+    } else {
+      console.log(alert(`Good Evening! ${name}`));
+    }
+    if (age >= 18 && isHoliday) {
+      console.log(alert(`Discount is 20%`));
+    } else {
+      console.log(alert(`Age pass but not a holiday,\n No discount!`));
+    }
+    if (age >= 18 && age < 65) {
+      console.log(alert(`You are an adult!`));
+    } else if (age >= 65) {
+      console.log(alert(`You are a senior!`));
+    } else {
+      console.log(alert(`You are a minor!`));
+    }
+  </script>
+</body>
+</html>

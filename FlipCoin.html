@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let coin = Math.random();
+    let InvalidInput = '';
+    guess = prompt('Heads or Tails');
+
+    /*if (coin <= 0.5 || coin > 1) {
+      let result = console.log(alert('Heads!'));
+    } else if (coin > 0.5 || coin <= 1) {
+      result = console.log(alert('Tails!'));
+    }else {
+      result = console.log(alert('Invalid input!'));
+    }
+    if (guess === result) {
+      console.log(alert('You guessed right!'));
+    } else {
+      console.log(alert('You guessed wrong!'));
+    }*/
+
+    InvalidInput = guess !== 'Heads' && guess !== 'Tails' ? alert('Invalid input!') : guess === 'Heads' || guess === 'Tails' ? alert('Valid input!') : InvalidInput;
+
+    coin <= 0.5 || coin > 1 ? result = 'Heads' : coin > 0.5 || coin <= 1 ? result = 'Tails' : InvalidInput;
+    console.log(alert(result));
+
+    guess === result ? console.log(alert('You guessed right!')) : guess !== result ? console.log(alert('You guessed wrong!')) : InvalidInput;
+  </script>
+  <h1>Flip a Coin</h1>
+  <p>Guess the outcome of a coin flip. Type "Heads" or "Tails".</p>
+</body>
+</html>

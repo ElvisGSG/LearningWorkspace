@@ -8,52 +8,30 @@
     <h1><i>Danny's Resturant</i></h1>
     <h2>Menu</h2>
     <button onclick="
-      console.log(`cart Quantity: ${cartQuantity}`);">
+      UpdateCartQuantity('show quantity');">
     show quantity</button>
 
     <button onclick="
-      cartQuantity += 1;
-       console.log(`cart Quantity: ${cartQuantity}`);"
-       >add to cart</button>
+      UpdateCartQuantity(1);"
+       >+1</button>
 
     <button onclick="
-      cartQuantity -= 4; 
-      if (cartQuantity <= MinQuantity) {
-      console.log(alert('Cart cannot be less than 1!'));
-     }
-     else {
-      console.log('Add items!');
-    }
-      console.log(`cart Quantity: ${cartQuantity}`);">-4</button>
+      UpdateCartQuantity(4);">
+     -4</button>
 
-    <button onclick="cartQuantity += 2; 
-     if (cartQuantity >= MaxQuantity) {
-      console.log(alert('Cart is full!'));
-     }
-     else {
-      console.log('Add items!');
-    }
-    console.log(`cart Quantity: ${cartQuantity}`);">+2</button>
+    <button onclick="
+      UpdateCartQuantity(2);">+2</button>
 
-    <button onclick="cartQuantity += 3;
-     if (cartQuantity >= MaxQuantity) {
-      console.log(alert('Cart is full!'));
-     }
-     else {
-      console.log('Add items!');
-    }
-    console.log(`cart Quantity: ${cartQuantity}`);">+3</button>
+    <button onclick="
+      UpdateCartQuantity(3);">+3</button>
 
     <button
-      onclick="cartQuantity = 0;
-      console.log('cart was reset.')
-      console.log(`Cart Quantity: ${cartQuantity}`);"
+      onclick="
+      UpdateCartQuantity(0);"
       >reset cart</button>
 
-  <script>
-    MaxQuantity = 10;
-    MinQuantity = 1;
-    let cartQuantity = 0;
+  <script src="cart.js">
+
   </script>
   <br>
   

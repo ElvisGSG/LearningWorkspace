@@ -6,10 +6,8 @@
   <title>Document</title>
 </head>
 <body>
-  <script>
-    let coin = Math.random();
-    let InvalidInput = '';
-    guess = prompt('Heads or Tails');
+  <script src="flipcoin.js">
+
 
     /*if (coin <= 0.5 || coin > 1) {
       let result = console.log(alert('Heads!'));
@@ -24,14 +22,14 @@
       console.log(alert('You guessed wrong!'));
     }*/
 
-    InvalidInput = guess !== 'Heads' && guess !== 'Tails' ? alert('Invalid input!') : guess === 'Heads' || guess === 'Tails' ? alert('Valid input!') : InvalidInput;
-
-    coin <= 0.5 || coin > 1 ? result = 'Heads' : coin > 0.5 || coin <= 1 ? result = 'Tails' : InvalidInput;
-    console.log(alert(result));
-
-    guess === result ? console.log(alert('You guessed right!')) : guess !== result ? console.log(alert('You guessed wrong!')) : InvalidInput;
   </script>
   <h1>Flip a Coin</h1>
   <p>Guess the outcome of a coin flip. Type "Heads" or "Tails".</p>
+  <button onclick="playGame('Heads')">
+    Heads
+  </button>
+  <button onclick="playGame('Tails')">
+    Tails
+  </button>
 </body>
 </html>

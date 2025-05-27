@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  <title>Objects</title>
+  </head>
+  <body>
+
+  <script>
+    /*
+    const product = {
+      name: 'socks',
+      price: 1090
+    };
+    console.log(product);
+    console.log(product.name);
+
+    product.name = 'cotton socks'
+    console.log(product);
+    console.log(product.name)
+    */
+   /*
+    product2 = {
+    name: 'socks',
+    price_off: 1090,
+    'price-off-2': 'cotton socks',
+    another_item: {
+      food: 'chips',
+      price: 200
+    },
+    fun: function function1() {
+      console.log('hello');
+    }
+    }
+    console.log(product2.price_off);
+    console.log(product2['price-off-2']);
+    console.log(product2.another_item.food);
+    product2.fun()
+
+    console.log(JSON.stringify(product2))
+    console.log(JSON.parse(JSON.stringify(product2)))
+    */
+
+    /*console.log('hello'.toUpperCase());
+    console.log('hello'.length);
+
+    const object3 = {
+      message: 'good job',
+      number: 123,
+      boolean: true,
+    }
+    //destructuring
+    const message = object3.message;
+    
+   /*
+    const {message, number, boolean} = object3;
+    console.log(message); 
+    console.log(number);
+    console.log(boolean);
+    
+
+    // shorthand properties
+    /*const object5 = {
+      message,
+      number,
+      boolean,
+      method() {
+        console.log('hello');
+      } 
+    }
+    console.log(object5);
+    object5.method();
+    */
+    items = {
+      item_1: {
+      item: 'BasketBall',
+      price: 2095,
+      'delivery-time': '2 days',
+    },
+      item_2: {
+      item2: 'TennisBall',
+      price2: 1595,
+      'delivery-time2': '3 days',
+    }
+
+    }
+  console.log(items.item_1);
+  console.log(items.item_2);
+    function comparePrice(product1, product2) {
+      if (product1 < product2) {
+        return console.log(`${items.item_1.item} is cheaper`);
+
+      } else if (product1 > product2) {
+        return console.log(`${items.item_2.item2} is cheaper`);
+    }
+  }
+    comparePrice(items.item_1.price, items.item_2.price2);
+  greeting = 'good morning';
+  lowercase = greeting.toUpperCase();
+
+  console.log(greeting);
+  console.log(lowercase);
+
+  str = 'HELLO WORLD'
+  repeated = str.repeat(3);
+  console.log(repeated);
+    
+  </script>
+    
+
+  </body>
+</html>

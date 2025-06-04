@@ -1,7 +1,9 @@
       
       MaxQuantity = 10;
       MinQuantity = 0;
-      quantity = 0;
+      quantity = JSON.parse(localStorage.getItem('cartQuantity')) || 0;
+
+      
       function UpdateCartQuantity(cartQuantity) {
       
       if (cartQuantity === 1) {
@@ -36,5 +38,11 @@
       else if (quantity <= MinQuantity) {
         console.log(alert('Cart cannot be 1 or less!'));
       }
+       
+      document.querySelector('p').innerHTML = `Cart Quantity: ${quantity}`;
+
+      localStorage.setItem('cartQuantity',JSON.stringify(quantity));
 
     }
+
+    document.querySelector('p').innerHTML = `Cart Quantity: ${quantity}`;

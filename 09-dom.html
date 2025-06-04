@@ -6,9 +6,25 @@
   </head>
   <body>
     <button>hello</button>
+    <button class="js-btn">second Button</button>
 
   <script>
+    // Select the button element
+    console.log(document.querySelector('button').innerHTML);
+    document.querySelector('button').innerHTML = "Click Me";
+
+    document.querySelector('.js-btn').innerHTML = "Second Button";
+
+    button1Ellemet = document.querySelector('button');
+    console.log(button1Ellemet);
     
+    button2Ellemet = document.querySelector('.js-btn').innerHTML = "Second Button Changed";
+    console.log(button2Ellemet);
+
+    /*
+    document.body.innerHTML = "<h1>DOM(Document Object Module)</h1>";
+    document.title = "DOM(Document Object Module)";
+    */
   </script>
     
 

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  <title>DOM(Document Object Module)</title>
+  </head>
+  <body>
+    <button class="js-btn1" onclick="flipCoin('Heads')">Heads</button>
+    <button class="js-btn2" onclick="flipCoin2('Tails')">Tails</button>
+    <p class="js-result"></p>
+
+    <input type="text" class="js-input" placeholder="Name"  onkeyup="Submit2(event)">
+    <Button onclick="
+      Submit1()"
+    >Submit</Button>
+    <p class="js-name"></p>
+
+  <script>
+    const btn1 = document.querySelector('.js-btn1');
+    const btn2 = document.querySelector('.js-btn2');
+    let result = document.querySelector('.js-result');
+
+    function flipCoin(){
+      if (btn1.innerText === 'Heads') {
+        result.innerHTML = `You Choose: ${btn1.innerText}`;
+      } 
+    }
+    function flipCoin2(){
+      if (btn2.innerText === 'Tails') {
+        result.innerHTML = `You Choose: ${btn2.innerText}`;
+      } 
+    }
+    function Submit1() {
+      const inputElement = document.querySelector('.js-input');
+      let nameElement = document.querySelector('.js-name');
+      nameElement.innerHTML = ` ${inputElement.value}`;
+    }
+
+    function Submit2(event) {
+      key = event.key; 
+      Submit1();
+     
+    }
+    
+  </script>
+    
+
+  </body>
+</html>

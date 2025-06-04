@@ -3,7 +3,7 @@
       // The calculator supports addition, subtraction, multiplication, and division.
       // The user can enter numbers and operators using buttons.
       // The result is displayed in the console.
-    let calculation = JSON.parse(localStorage.getItem('calculation')) || '';
+    let calculation = JSON.parse(localStorage.getItem('calculation')) || 0;
 
       function calculate(number) {
         
@@ -69,6 +69,10 @@
           console.log('Invalid input');
         }
           localStorage.setItem('calculation', JSON.stringify(calculation));
+
+        document.querySelector('.js-result').innerHTML = calculation;
       }
+
+      document.querySelector('.js-result').innerHTML = calculation;
     
 

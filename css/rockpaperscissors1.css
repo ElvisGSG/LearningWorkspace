@@ -1,12 +1,24 @@
+.rps {
+  border: 0px solid;
+  align-items: center;
+  border-radius: 10px;
+  width: 400px;
+  margin-left: 33%;
+  margin-top: 5%;
+  padding: 5%;
+  box-shadow:  0 0 10px rgba(242, 240, 240, 0.5);
+}
+
 body {
   background-color: rgb(25, 25, 25);
   color: white;
   font-family: Arial, sans-serif;
+  text-align: center;
 }
 
 .title {
   font-size: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 10%;
   font-weight: bold
 }
 

@@ -24,6 +24,10 @@ body {
   background-color: rgb(240, 240, 240);
   color: black;
 }
+.error{
+  color: red;
+  font-weight: bold;
+}
 
 .cost-input {
   font-size: 15px;

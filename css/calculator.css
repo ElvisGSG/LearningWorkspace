@@ -1,0 +1,32 @@
+body {
+  background-color: #000000;
+  font-family: Arial, sans-serif;
+}
+
+.numbers {
+  border-radius: 60%;
+  background-color: #635f5f;
+  color : #ffffff;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.operator {
+  border-radius: 60%;
+  background-color: #ffb300;
+  color : #fffdfd;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.js-result {
+  font-size: large;
+  font-weight: bold;
+  color: #ffffff;
+}

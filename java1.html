@@ -3,36 +3,41 @@
   <head>
 
   <title>cart quantity</title>
+  <link rel="stylesheet" href="css/cart.css">
   </head>
   <body>
-    <h1><i>Danny's Resturant</i></h1>
+    <h1 class="title"><i>Danny's Resturant</i></h1>
     <h2>Menu</h2>
     <button onclick="
-      UpdateCartQuantity('show quantity');">
+      UpdateCartQuantity('show quantity');" class="show-quantity">
     show quantity</button>
 
     <button onclick="
-      UpdateCartQuantity(1);"
-       >+1</button>
+      UpdateCartQuantity(1);" class="add-quantity">
+      +1</button>
 
     <button onclick="
-      UpdateCartQuantity(4);">
+      UpdateCartQuantity(2);"class="add-quantity">+2</button>
+
+    <button onclick="
+      UpdateCartQuantity(3);"class="add-quantity">+3</button>
+
+    
+    <button onclick="
+      UpdateCartQuantity(4);" class="subb-quantity">
      -4</button>
-
-    <button onclick="
-      UpdateCartQuantity(2);">+2</button>
-
-    <button onclick="
-      UpdateCartQuantity(3);">+3</button>
+    <br>
 
     <button
       onclick="
-      UpdateCartQuantity(0);"
+      UpdateCartQuantity(0);" class="reset"
       >reset cart</button>
 
     <p></p>
 
-  <script src="cart.js">
+    <button class="js-button">TEST</button>
+
+  <script src="JavaScript/cart.js">
 
   </script>
   <br>

@@ -2,41 +2,43 @@
 <html>
   <head>
     <title>Calculator</title>
+    <link rel="stylesheet" href="css/calculator.css">
   </head>
   <body>
 
+    <p class="js-result"></p>
     <p>
-      <button onclick =" calculate(1) ">1</button>
-      <button onclick =" calculate(2) ">2</button>
-      <button onclick =" calculate(3) ">3</button>
-      <button onclick =" calculate('+') ">+</button>
+      <button onclick =" calculate(1) "class="numbers">1</button>
+      <button onclick =" calculate(2) "class="numbers">2</button>
+      <button onclick =" calculate(3) "class="numbers">3</button>
+      <button onclick =" calculate('+') "class="operator">+</button>
     </p>
     <p>
-      <button onclick =" calculate(4) ">4</button>
-      <button onclick =" calculate(5) ">5</button>
-      <button onclick =" calculate(6) ">6</button>
-      <button onclick =" calculate('*') ">*</button>
+      <button onclick =" calculate(4) " class="numbers">4</button>
+      <button onclick =" calculate(5) "class="numbers">5</button>
+      <button onclick =" calculate(6) "class="numbers">6</button>
+      <button onclick =" calculate('*') "class="operator">*</button>
     </p>
     <p>
-      <button onclick =" calculate(7) ">7</button>
-      <button onclick =" calculate(8) ">8</button>
-      <button onclick =" calculate(9) ">9</button>
+      <button onclick =" calculate(7) "class="numbers">7</button>
+      <button onclick =" calculate(8) "class="numbers">8</button>
+      <button onclick =" calculate(9) "class="numbers">9</button>
       
-      <button onclick =" calculate('=') ">=</button>
+      <button onclick =" calculate('=') "class="operator">=</button>
     </p>
     <p>
-      <button onclick =" calculate(0) ">0</button>
-      <button onclick =" calculate('c') ">C</button>
+      <button onclick =" calculate(0) "class="numbers">0</button>
+      <button onclick =" calculate('c') "class="numbers">C</button>
     </p>
     <P>
       <button onclick="calculate('r')">reaveal calculation</button>
     </P>
 
-    <p class="js-result"></p>
+
 
       
 
-    <script src="javascript2.js"></script>
+    <script src="JavaScript/javascript2.js"></script>
 
   </body>
 </html>

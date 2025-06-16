@@ -46,3 +46,5 @@
     }
 
     document.querySelector('p').innerHTML = `Cart Quantity: ${quantity}`;
+
+console.log(document.querySelector('.js-button').classList.contains('js-button'))

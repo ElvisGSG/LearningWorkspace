@@ -3,7 +3,7 @@
   <head>
 
   <title>DOM Projects</title>
-  <link rel="stylesheet" href="domprojects1.css">
+  <link rel="stylesheet" href="css/domprojects1.css">
   </head>
   <body>
     <p>YouTube Subscribe Button</p>
@@ -31,14 +31,21 @@
     }
 
     function calculateTotal(){
-      const inputElement = document.querySelector('.js-cost-input'); 
+      inputElement = document.querySelector('.js-cost-input'); 
+      count = document.querySelector('.js-total-cost');
       let cost = Number(inputElement.value); 
 
-      if (cost < 40){
+    if (cost <= 0) {
+      count.classList.add('error');
+      count.innerHTML = 'Error: Cost cannot be less than $0';
+    } else {
+      count.classList.remove('error');
+      if (cost <= 40) {
         cost = cost + 10;
       }
+      count.innerHTML = `$${cost.toFixed(2)}`;
+    }
 
-      document.querySelector('.js-total-cost').innerHTML = `$${cost.toFixed(2)}`;
     }
     function Subscribe(){
       const buttonElement = document.querySelector('.js-Subscribe-button')
